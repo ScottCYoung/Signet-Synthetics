@@ -1,0 +1,72 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www.jared.com/en/jaredstore/searchterm/732541000/true/732541000%20and%20confirm%20all%20objects%20load"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "items"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Men's Cufflinks Titanium"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='product-grid']/div[1]/div/a/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "btnStartCustomizing"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "e_1"
+      },
+      "text": "App"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='engr']//a[.='Next']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "addToCart"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "CHECKOUT"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Shopping Bag (1 Item)"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}

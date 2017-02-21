@@ -1,0 +1,36 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www.jared.com/FindAStoreView?storeId=10451&catalogId=10001&langId=-1"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "input_location"
+      },
+      "text": "44444"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "findStoresBtn"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Fashion Square"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}

@@ -1,0 +1,10 @@
+
+*.log
+
+Working/__init__.py
+
+.idea/inspectionProfiles/profiles_settings.xml
+
+.idea/misc.xml
+
+.idea/*.*
